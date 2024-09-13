@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Codeforces",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [
+                "<", 
+                "${fileDirname}/in.txt",
+                 ">", 
+                 "${fileDirname}/out.txt"
+            ],
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for clang",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "targetArchitecture": "x64",
+            "preLaunchTask": "C/C++: clang++ build"
+        }
+    ],
+    "version": "2.0.0"
+}
